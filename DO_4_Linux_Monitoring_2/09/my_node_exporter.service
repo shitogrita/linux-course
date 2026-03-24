@@ -1,0 +1,7 @@
+[Unit]
+Description=Custom Bash Node Exporter
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c 'while true; do /home/vboxuser/share/src/09/exporter.sh; sleep 3; done'
+Restart=always
